@@ -51,10 +51,10 @@ void myhandler(int dummy) {
 //pega ctrl-z, e troca entre background mode/normal mode
 void myzhandler(int dummy){
 	if(ignored == 0){
-		printf("Entering foreground-only mode (& is now ignored)\n");
+		printf("Entrando no modo primeiro plano (& agora eh ignorado)\n");
 		ignored = 1;
 	}else if(ignored == 1){
-		printf("Exiting foreground-only mode\n");
+		printf("Saindo do modo de primeiro plano\n");
 		ignored = 0;
 	}
 }
@@ -100,7 +100,7 @@ int main(){
 				if(pidarray[j] != 0){
 					if(result != 0){
 						//processo terminou, mata e remove do vetor
-						printf("background pid %d is done: exit value %d\n", result, status2);
+						printf("background pid %d terminou: exit value %d\n", result, status2);
 						kill(pidarray[j], SIGKILL);
 						pidskilled++;
 						pidarray[j] = 0;
@@ -209,17 +209,16 @@ int main(){
 			}
 		}else if(strcmp(args2[0], "status")==0){
 			if(lastforeground != 1){
-				printf("exit value %d\n", exitstatus);
+				printf("valor de saida %d\n", exitstatus);
 			}else{
-				printf("terminated by signal %d\n", terminatedby);
+				printf("terminado pelo sinal %d\n", terminatedby);
 			}
 		}else if(strcmp(firstLetter, "#")!=0){
 
 //se input nao for builtin:
 // determina qualquer redirecionamento i/o a ser feito
 
-	//acha i_place (onde <= occurs") e o_place (onde => occurs)
-
+//acha i_place (onde <= ocorre") e o_place (onde => ocorre)
 
 			i = 0;
 			int i_place = 0;
@@ -253,7 +252,7 @@ int main(){
 
 				if(access(OS_string[i_place+1], F_OK)!= -1){
 				}else{
-					printf("cannot open %s for input\n", OS_string[i_place+1]);
+					printf("nao pode abrir %s para o input\n", OS_string[i_place+1]);
 					skip = 1;
 				}
 
@@ -411,9 +410,9 @@ int main(){
 					perror("CHILD: exec failure\n");
 					break;
 
-				default: //parent class
+				default: //classe pai
 					if(background == 1 ){
-						printf("background pid is %d\n", spawnpid);
+						printf("background pid eh %d\n", spawnpid);
 					}else if(background == 0){
 						waitpid(spawnpid, &childExitMethod, 0);
 						kill(spawnpid, SIGKILL);
