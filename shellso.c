@@ -215,11 +215,11 @@ int main(){
 			}
 		}else if(strcmp(firstLetter, "#")!=0){
 
-//if input = not build in:
-// determine any input / output redirection to be done
-/*
- *	find i_place (where <= occurs" and o_place (where => occurs)
- */
+//se input nao for builtin:
+// determina qualquer redirecionamento i/o a ser feito
+
+	//acha i_place (onde <= occurs") e o_place (onde => occurs)
+
 
 			i = 0;
 			int i_place = 0;
