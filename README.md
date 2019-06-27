@@ -9,14 +9,16 @@ Para a execução do terminal por favor efetue os seguintes passos:
 
     gcc -o shellso shellso.c
 
-3 - Execute com ./shellso
+3 - Execute com 
+
+    ./shellso
 
 4 - Para sair do terminal execute o comando "fim" no mesmo.
 
 Exemplos de comandos suportados:
 
-cd
-ls
-pwd
-cat
-wc
+    cd
+    ls
+    pwd
+    cat
+    wc
