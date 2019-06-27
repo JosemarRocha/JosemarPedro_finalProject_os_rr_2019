@@ -3,6 +3,8 @@ Projeto final da disciplina de Sistemas Operacionais, ministrada pelo professor 
 
 Para a execução do terminal por favor efetue os seguintes passos:
 
+Obs: para uma execução segura é recomendado que o código fique na /home.
+
 1 - Baixe o arquivo do código "shellso.c"
 
 2 - Compile o código no terminal usando o comando:
