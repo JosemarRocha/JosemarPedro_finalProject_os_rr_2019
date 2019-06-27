@@ -3,13 +3,18 @@ Projeto final da disciplina de Sistemas Operacionais, ministrada pelo professor 
 
 Para a execução do terminal por favor efetue os seguintes passos:
 
-1 - Baixe o arquivo do código "shellso.c" \n
-2 - Compile o código no terminal usando o comando: \n
-    gcc -o shellso shellso.c \n
-3 - Execute com ./shellso \n
-4 - Para sair do terminal execute o comando "fim" no mesmo. \n
+1 - Baixe o arquivo do código "shellso.c"
 
-Exemplos de comandos suportados: \n
+2 - Compile o código no terminal usando o comando:
+
+    gcc -o shellso shellso.c
+
+3 - Execute com ./shellso
+
+4 - Para sair do terminal execute o comando "fim" no mesmo.
+
+Exemplos de comandos suportados:
+
 cd
 ls
 pwd
